@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "@xiaohe01/tsconfig/tsconfig.basic.json",
+    "@xiaohe01/tsconfig/tsconfig.vue.json"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "docs/**/*"
+  ],
+  "exclude": [
+    "docs/.vitepress/config/**/*"
+  ]
+}

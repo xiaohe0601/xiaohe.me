@@ -1,0 +1,20 @@
+{
+  "extends": "@xiaohe01/tsconfig/tsconfig.basic.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2020"
+    ],
+    "types": [
+      "node"
+    ],
+    "allowJs": true
+  },
+  "include": [
+    "docs/.vitepress/config/**/*",
+    "scripts/**/*",
+    "uno.config.ts",
+    "vite.config.ts",
+    "eslint.config.js",
+    "stylelint.config.js"
+  ]
+}

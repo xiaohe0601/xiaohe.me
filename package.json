@@ -1,0 +1,52 @@
+{
+  "name": "xiaohe.me",
+  "type": "module",
+  "private": "true",
+  "packageManager": "pnpm@10.15.0",
+  "description": "🖥️ Xiaohe's personal website",
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "lint": "eslint --cache",
+    "lint:fix": "nr lint --fix",
+    "stylelint": "stylelint **/*.{css,scss,html,vue} --cache",
+    "stylelint:fix": "nr stylelint --fix"
+  },
+  "dependencies": {
+    "@vueuse/core": "catalog:utils",
+    "await-to-js": "catalog:prod",
+    "dayjs": "catalog:utils",
+    "es-toolkit": "catalog:prod",
+    "vue": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@antfu/ni": "catalog:dev",
+    "@iconify-json/carbon": "catalog:icons",
+    "@iconify-json/tabler": "catalog:icons",
+    "@vue/runtime-core": "catalog:frontend",
+    "@xiaohe01/eslint-config": "catalog:lint",
+    "@xiaohe01/stylelint-config": "catalog:lint",
+    "@xiaohe01/tsconfig": "catalog:dev",
+    "eslint": "catalog:lint",
+    "esno": "catalog:script",
+    "lint-staged": "catalog:lint",
+    "pncat": "catalog:cli",
+    "simple-git-hooks": "catalog:lint",
+    "stylelint": "catalog:lint",
+    "typescript": "catalog:dev",
+    "unocss": "catalog:style",
+    "vite": "catalog:build",
+    "vitepress": "catalog:build",
+    "vitepress-plugin-group-icons": "catalog:build",
+    "vue-tsc": "catalog:frontend"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix",
+    "*.{css,scss,html,vue}": "stylelint --fix"
+  }
+}
