@@ -62,13 +62,23 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   z-index: 9999;
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
 .VPSwitchAppearance {
   width: 22px !important;
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
 .VPSwitchAppearance .check {
   transform: none !important;
+}
+
+.VPFooter .message a {
+  color: var(--vp-c-brand-1);
+  text-decoration-line: none;
+}
+
+.VPFooter .message a:hover {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-home-hero-name-background);
+  background-clip: text;
+  -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
 </style>

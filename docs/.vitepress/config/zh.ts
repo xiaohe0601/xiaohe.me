@@ -9,7 +9,7 @@ export const zh = defineConfig({
     nav: nav(),
     sidebar: sidebar(),
     footer: {
-      message: "蜀ICP备20015535号-1",
+      message: `ICP备案号：<a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备20015535号-1</a>`,
       copyright: "版权所有 (c) 2025-PRESENT xiaohe0601"
     },
     docFooter: {
