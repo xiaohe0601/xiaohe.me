@@ -22,10 +22,6 @@ features:
   - icon: <i class="i-tabler:brand-wechat"></i>
     title: 微信公众号
     details: 小何不会写代码
-  - icon: <i class="i-tabler:brand-zhihu"></i>
-    title: 知乎
-    details: xiaohe0601
-    link: https://www.zhihu.com/people/xiaohe0601
   - icon: <i class="i-tabler:heart"></i>
     title: 爱发电
     details: xiaohe0601
