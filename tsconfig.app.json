@@ -11,9 +11,7 @@
     ]
   },
   "include": [
-    "docs/**/*"
-  ],
-  "exclude": [
-    "docs/.vitepress/config/**/*"
+    "docs/.vitepress/theme/**/*",
+    "docs/**/*.md"
   ]
 }

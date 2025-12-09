@@ -2,7 +2,7 @@
   "name": "xiaohe.me",
   "type": "module",
   "private": "true",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.25.0",
   "description": "🖥️ Xiaohe's personal website",
   "scripts": {
     "prepare": "simple-git-hooks",
@@ -11,7 +11,7 @@
     "preview": "vitepress preview docs",
     "lint": "eslint --cache",
     "lint:fix": "nr lint --fix",
-    "lint:type": "vue-tsc --noEmit",
+    "lint:type": "vue-tsc -b --noEmit",
     "stylelint": "stylelint **/*.{css,scss,html,vue} --cache",
     "stylelint:fix": "nr stylelint --fix"
   },
