@@ -3,20 +3,20 @@ shellEmulator: true
 
 catalogs:
   build:
-    vite: ^7.2.7
+    vite: ^7.3.0
   cli:
     "@antfu/ni": ^28.0.0
     pncat: ^0.7.7
   dev:
-    "@vue/runtime-core": ^3.5.25
+    "@vue/runtime-core": ^3.5.26
   docs:
     vitepress: 2.0.0-alpha.12
     vitepress-plugin-group-icons: ^1.6.5
   frontend:
-    vue: ^3.5.25
+    vue: ^3.5.26
   icons:
     "@iconify-json/carbon": ^1.2.15
-    "@iconify-json/tabler": ^1.2.23
+    "@iconify-json/tabler": ^1.2.25
   lint:
     eslint: ^9.39.2
     lint-staged: ^16.2.7
@@ -25,10 +25,10 @@ catalogs:
   script:
     esno: ^4.8.0
   style:
-    unocss: ^66.5.10
+    unocss: ^66.5.11
   tsc:
     typescript: ~5.9.3
-    vue-tsc: ^3.1.8
+    vue-tsc: ^3.2.1
   types:
     "@types/node": ^22.19.3
   utils:

@@ -2,7 +2,7 @@
   "name": "xiaohe.me",
   "type": "module",
   "private": "true",
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.2",
   "description": "🖥️ Xiaohe's personal website",
   "scripts": {
     "prepare": "simple-git-hooks",
