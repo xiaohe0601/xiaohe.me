@@ -4,175 +4,82 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  build:
-    vite:
-      specifier: ^7.3.0
-      version: 7.3.0
-  cli:
-    '@antfu/ni':
-      specifier: ^28.0.0
-      version: 28.0.0
-    pncat:
-      specifier: ^0.7.7
-      version: 0.7.7
-  dev:
-    '@vue/runtime-core':
-      specifier: ^3.5.26
-      version: 3.5.26
-  docs:
-    vitepress:
-      specifier: 2.0.0-alpha.12
-      version: 2.0.0-alpha.12
-    vitepress-plugin-group-icons:
-      specifier: ^1.6.5
-      version: 1.6.5
-  frontend:
-    vue:
-      specifier: ^3.5.26
-      version: 3.5.26
-  icons:
-    '@iconify-json/carbon':
-      specifier: ^1.2.15
-      version: 1.2.15
-    '@iconify-json/tabler':
-      specifier: ^1.2.25
-      version: 1.2.25
-  lint:
-    eslint:
-      specifier: ^9.39.2
-      version: 9.39.2
-    lint-staged:
-      specifier: ^16.2.7
-      version: 16.2.7
-    simple-git-hooks:
-      specifier: ^2.13.1
-      version: 2.13.1
-    stylelint:
-      specifier: ^16.26.1
-      version: 16.26.1
-  script:
-    esno:
-      specifier: ^4.8.0
-      version: 4.8.0
-  style:
-    unocss:
-      specifier: ^66.5.11
-      version: 66.5.11
-  tsc:
-    typescript:
-      specifier: ~5.9.3
-      version: 5.9.3
-    vue-tsc:
-      specifier: ^3.2.1
-      version: 3.2.1
-  types:
-    '@types/node':
-      specifier: ^22.19.3
-      version: 22.19.3
-  utils:
-    '@vueuse/core':
-      specifier: ^14.1.0
-      version: 14.1.0
-    await-to-js:
-      specifier: ^3.0.0
-      version: 3.0.0
-    dayjs:
-      specifier: ^1.11.19
-      version: 1.11.19
-    es-toolkit:
-      specifier: ^1.43.0
-      version: 1.43.0
-  xiaohe:
-    '@xiaohe01/eslint-config':
-      specifier: ^4.1.0
-      version: 4.1.0
-    '@xiaohe01/stylelint-config':
-      specifier: ^3.1.0
-      version: 3.1.0
-    '@xiaohe01/tsconfig':
-      specifier: ^3.1.0
-      version: 3.1.0
-
 importers:
 
   .:
     dependencies:
       '@vueuse/core':
-        specifier: catalog:utils
+        specifier: ^14.1.0
         version: 14.1.0(vue@3.5.26(typescript@5.9.3))
       await-to-js:
-        specifier: catalog:utils
+        specifier: ^3.0.0
         version: 3.0.0
       dayjs:
-        specifier: catalog:utils
+        specifier: ^1.11.19
         version: 1.11.19
       es-toolkit:
-        specifier: catalog:utils
+        specifier: ^1.43.0
         version: 1.43.0
       vue:
-        specifier: catalog:frontend
+        specifier: ^3.5.26
         version: 3.5.26(typescript@5.9.3)
     devDependencies:
       '@antfu/ni':
-        specifier: catalog:cli
+        specifier: ^28.0.0
         version: 28.0.0
       '@iconify-json/carbon':
-        specifier: catalog:icons
+        specifier: ^1.2.15
         version: 1.2.15
       '@iconify-json/tabler':
-        specifier: catalog:icons
+        specifier: ^1.2.25
         version: 1.2.25
       '@types/node':
-        specifier: catalog:types
+        specifier: ^22.19.3
         version: 22.19.3
       '@vue/runtime-core':
-        specifier: catalog:dev
+        specifier: ^3.5.26
         version: 3.5.26
       '@xiaohe01/eslint-config':
-        specifier: catalog:xiaohe
+        specifier: ^4.1.0
         version: 4.1.0(@vue/compiler-sfc@3.5.26)(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       '@xiaohe01/stylelint-config':
-        specifier: catalog:xiaohe
+        specifier: ^3.1.0
         version: 3.1.0(postcss@8.5.6)(stylelint@16.26.1(typescript@5.9.3))
       '@xiaohe01/tsconfig':
-        specifier: catalog:xiaohe
+        specifier: ^3.1.0
         version: 3.1.0
       eslint:
-        specifier: catalog:lint
+        specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
       esno:
-        specifier: catalog:script
+        specifier: ^4.8.0
         version: 4.8.0
       lint-staged:
-        specifier: catalog:lint
+        specifier: ^16.2.7
         version: 16.2.7
-      pncat:
-        specifier: catalog:cli
-        version: 0.7.7
       simple-git-hooks:
-        specifier: catalog:lint
+        specifier: ^2.13.1
         version: 2.13.1
       stylelint:
-        specifier: catalog:lint
+        specifier: ^16.26.1
         version: 16.26.1(typescript@5.9.3)
       typescript:
-        specifier: catalog:tsc
+        specifier: ~5.9.3
         version: 5.9.3
       unocss:
-        specifier: catalog:style
+        specifier: ^66.5.11
         version: 66.5.11(postcss@8.5.6)(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
       vite:
-        specifier: catalog:build
+        specifier: ^7.3.0
         version: 7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)
       vitepress:
-        specifier: catalog:docs
+        specifier: 2.0.0-alpha.12
         version: 2.0.0-alpha.12(@algolia/client-search@5.46.2)(@types/node@22.19.3)(change-case@5.4.4)(jiti@2.6.1)(postcss@8.5.6)(react@19.2.3)(search-insights@2.17.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       vitepress-plugin-group-icons:
-        specifier: catalog:docs
+        specifier: ^1.6.5
         version: 1.6.5(vite@7.3.0(@types/node@22.19.3)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
       vue-tsc:
-        specifier: catalog:tsc
+        specifier: ^3.2.1
         version: 3.2.1(typescript@5.9.3)
 
 packages:
@@ -2037,10 +1944,6 @@ packages:
     resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
     engines: {node: '>=0.10.0'}
 
-  is-network-error@1.3.0:
-    resolution: {integrity: sha512-6oIwpsgRfnDiyEDLMay/GqCl3HoAtH5+RUKW29gYkL0QA+ipzpDLA16yQs7/RHCSu+BwgbJaOUqa4A99qNVQVw==}
-    engines: {node: '>=16'}
-
   is-number@7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
@@ -2410,10 +2313,6 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  p-retry@7.1.1:
-    resolution: {integrity: sha512-J5ApzjyRkkf601HpEeykoiCvzHQjWxPAHhyjFcEUP2SWq0+35NKh8TLhpLw+Dkq5TZBFvUM6UigdE9hIVYTl5w==}
-    engines: {node: '>=20'}
-
   package-manager-detector@1.6.0:
     resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
 
@@ -2481,10 +2380,6 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-
-  pncat@0.7.7:
-    resolution: {integrity: sha512-qI+TF73Blej7ZchXMGXe7bolQFv3IBrWI1aFyOPPYeZZVW9aJmAiKCUFMHdA/GY2UvdNcrZksRkgo870qHoPdw==}
-    hasBin: true
 
   pnpm-workspace-yaml@1.4.3:
     resolution: {integrity: sha512-Q8B3SWuuISy/Ciag4DFP7MCrJX07wfaekcqD2o/msdIj4x8Ql3bZ/NEKOXV7mTVh7m1YdiFWiMi9xH+0zuEGHw==}
@@ -5023,8 +4918,6 @@ snapshots:
     dependencies:
       is-extglob: 2.1.1
 
-  is-network-error@1.3.0: {}
-
   is-number@7.0.0: {}
 
   is-plain-object@5.0.0: {}
@@ -5564,10 +5457,6 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  p-retry@7.1.1:
-    dependencies:
-      is-network-error: 1.3.0
-
   package-manager-detector@1.6.0: {}
 
   parent-module@1.0.1:
@@ -5622,19 +5511,6 @@ snapshots:
       pathe: 2.0.3
 
   pluralize@8.0.0: {}
-
-  pncat@0.7.7:
-    dependencies:
-      '@clack/prompts': 0.11.0
-      ansis: 4.2.0
-      cac: 6.7.14
-      find-up-simple: 1.0.1
-      p-retry: 7.1.1
-      package-manager-detector: 1.6.0
-      pathe: 2.0.3
-      pnpm-workspace-yaml: 1.4.3
-      tinyexec: 1.0.2
-      unconfig: 7.4.2
 
   pnpm-workspace-yaml@1.4.3:
     dependencies:
